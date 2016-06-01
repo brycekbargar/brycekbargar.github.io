@@ -8,12 +8,9 @@
 # Site settings
 title: Mercilessly Refactored Life
 email: brycekbargar@gmail.com
-description: > 
-  A collection of refactorings I'm making or I've made
-  to try to pay down technical debt in 
-  my life, my programming or my music.
+description: "A collection of refactorings as I try to clean up the technical debt in my life, my code and my music"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://brycekbargar.com" # the base hostname & protocol for your site
+url: "https://www.brycekbargar.com" # the base hostname & protocol for your site
 github_username:  brycekbargar
 
 # Build settings
