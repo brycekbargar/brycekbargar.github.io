@@ -2,21 +2,16 @@
 layout: post
 title: Long Live .NET
 date: 2015-08-13 05:09:58.000000000 -05:00
-type: post
-published: true
-status: publish
-categories: \[\]
-tags: \[\]
-meta: {}
-author:
-login: brycekbargar@gmail.com
-email: brycekbargar@gmail.com
-display\_name: Bryce Bargar
-first\_name: Bryce
-last\_name: Bargar
 ---
 
-This story starts in college. I was writing c++ using Notepad++, saving to a mapped network drive and then compiling/executing/debugging via Putty/gcc/gdb. It sort of worked, it sort of met my (then still gestating) minimalist ideals, but really I just didn't know any better. "I am a circuits person" I thought, "why waste time learning to use linux or IDEs when this works so simply?"
+This story starts in college.  
+I was writing c++ using Notepad++,  
+saving to a mapped network drive   
+and then compiling/executing/debugging via Putty/gcc/gdb.  
+It sort of worked,  
+it sort of met my (then still gestating) minimalist ideals,  
+but really I just didn't know any better.  
+"I am a circuits person" I thought, "why waste time learning to use linux or IDEs when this works so simply?"  
 
 Yuck. Current me dislikes that version of me as well.
 
