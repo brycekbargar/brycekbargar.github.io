@@ -2,6 +2,7 @@
 layout: post
 title: Surviving Working From Home
 date: 2015-09-17 01:21:31.000000000 -05:00
+category: blog
 ---
 
 I was very excited when I was offered a 100% remote job.  

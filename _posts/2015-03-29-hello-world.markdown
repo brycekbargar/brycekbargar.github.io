@@ -2,6 +2,7 @@
 layout: post
 title: Hello, World!
 date: 2015-03-29 20:20:22.000000000 -05:00
+category: blog
 ---
 
 yes.

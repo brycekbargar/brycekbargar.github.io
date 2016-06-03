@@ -2,6 +2,7 @@
 layout: post
 title: Long Live .NET
 date: 2015-08-13 05:09:58.000000000 -05:00
+category: blog
 ---
 
 This story starts in college.  
