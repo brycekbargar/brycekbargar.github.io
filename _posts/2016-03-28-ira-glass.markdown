@@ -2,45 +2,48 @@
 layout: post
 title: Ira Glass
 date: 2016-03-28 00:49:03.000000000 -05:00
-type: post
-published: true
-status: publish
-categories: \[\]
-tags: \[\]
-meta: {}
-author:
-login: brycekbargar@gmail.com
-email: brycekbargar@gmail.com
-display\_name: Bryce Bargar
-first\_name: Bryce
-last\_name: Bargar
+category: blog
 ---
 
 So I found this video of Ira Glass.
 
-[Ira Glass on Storytelling][0] from [David Shiyang Liu][1] on [Vimeo][2].
+<iframe src="https://player.vimeo.com/video/24715531" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/24715531">Ira Glass on Storytelling</a> from <a href="https://vimeo.com/thedak">David Shiyang Liu</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-And for awhile I was doing what he recommended. Just kind of putting myself out there and trying produce something, anything. What he doesn't talk about is how hard it is to keep putting yourself out there. To keep failing in public. To keep falling short of what you know you should know you should be capable of.
+And for awhile I was doing what he recommended.  
+Just kind of putting myself out there and trying produce something, anything.  
+What he doesn't talk about is how hard it is to keep putting yourself out there.  
+To keep failing in public.   
+To keep falling short of what you know you should know you should be capable of.  
 
-It's all about momentum... In case you haven't noticed, I went dark recently for quite awhile. Last year everything was awesome, I had all the momentum. Then things just kind of fell apart. Falling out of love with your programming language, breaking up and moving out of a relationship with someone you still loved, starting 2 new jobs in 5 months, brutal Chicago winters. It's easy to slow to a crawl without even realizing it.
+It's all about momentum...  
+In case you haven't noticed, I went dark recently for quite awhile.  
+Last year everything was awesome, I had all the momentum.  
+Then things just kind of fell apart.  
+Falling out of love with your programming language,  
+breaking up and moving out of a relationship with someone you still loved,  
+starting 2 new jobs in 5 months,   
+brutal Chicago winters.  
 
-Did you know it takes exactly 10 weeks to play through Kotor I/II, Mass Effect 1/2/3, and Fallout: New Vegas? Because I do. I know that I retreat into video games when I feel my life spinning out of control, which makes it all the more painful to watch myself doing it.
+It's easy to slow to a crawl without even realizing it.
 
-It's all about momentum. And I have it again. Mostly because I watched that Ira Glass video and decided to say Fuck It and start producing again.
+Did you know it takes exactly 10 weeks to play through Kotor I/II, Mass Effect 1/2/3, and Fallout: New Vegas?  
+Because I do.  
+I know that I retreat into video games when I feel my life spinning out of control,  
+which makes it all the more painful to watch myself doing it.  
 
-So I wrote a song. Two and a half minutes of drums and bass. I'm not really proud of the ending. Or my performance on either instrument. Or the recording quality. Or any number of other things.
+It's all about momentum.  
+And I have it again.  
+Mostly because I watched that Ira Glass video and decided to say Fuck It and start producing again.  
 
-[Amateur Hour][3] from [brycekbargar][4] on [Vimeo][2].
+So I wrote a song. Two and a half minutes of drums and bass.   
+I'm not really proud of the ending.  
+Or my performance on either instrument.  
+Or the recording quality.  
+Or any number of other things.  
+
+<iframe src="https://player.vimeo.com/video/160555969" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/160555969">Amateur Hour</a> from <a href="https://vimeo.com/brycekbargar">brycekbargar</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 But it's out there. So progress?
 
-Anyways... I'm currently working on a couple of series of posts, which is cool I guess? 
-
-I'm back. Ready to keep putting myself out there. To continue failing and putting out content I'm not exactly proud of.
-
-
-[0]: https://vimeo.com/24715531
-[1]: https://vimeo.com/thedak
-[2]: https://vimeo.com
-[3]: https://vimeo.com/160555969
-[4]: https://vimeo.com/brycekbargar

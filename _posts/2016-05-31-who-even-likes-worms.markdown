@@ -2,18 +2,7 @@
 layout: post
 title: The Difference of 30 Minutes
 date: 2016-05-31 14:25:10.000000000 -05:00
-type: post
-published: true
-status: publish
-categories: \[\]
-tags: \[\]
-meta: {}
-author:
-login: brycekbargar@gmail.com
-email: brycekbargar@gmail.com
-display\_name: Bryce Bargar
-first\_name: Bryce
-last\_name: Bargar
+category: blog
 ---
 
 My whole life I've woken with an alarm.  
@@ -110,8 +99,8 @@ I constantly have to remind myself to
 "Just start. You can finish and go to bed when you want, it's not like you have to wake up a given hour."
 
 Drums are loud...  
-Getting off work at 4 meant I had some wiggle room to practice before I felt like I would be disrupting the evening quiet.  
-Getting off work at 6 means I have to start immediately and can't make a 3 hour exploration into something that catches my attention.  
+Getting off work at 4 meant I could be more casual about when I start practicing.  
+Getting off work at 6 means I can't begin 3 hour exploration into something that catches my attention.  
 Though I'm sure I'll adjust. Maybe a long lunch?
 
 Winter  
