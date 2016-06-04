@@ -43,4 +43,4 @@ Just because of some fucked up sense fear for not being good or insightful or el
 Fuck that noise.  
 
 
-[0]: {{ site.baseurl }}/blog/happy-cat/
+[0]: {{ '/blog/happy-cat/' | prepend: site.baseurl }}

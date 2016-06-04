@@ -16,6 +16,7 @@
                 {{ site.description }}
             {% endif %}"
         >
+
         <link rel="stylesheet" href="{{ '/css/cutestrap.min.css' | prepend: site.baseurl }}">
         <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
         <link rel="stylesheet" href="{{ '/css/syntax-highlighting.css' | prepend: site.baseurl }}">
@@ -33,9 +34,7 @@
             </nav>
         </header>
 
-        <div class="wrapper-large">
-            {{ content }}
-        </div>
+        {{ content }}
     </body>
 
 </html>
