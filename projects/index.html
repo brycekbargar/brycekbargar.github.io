@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="wrapper-large">
+    <h3 class="ta-center">Projects</h3>
+    {% for project in site.projects | sort:"order" %}
+    <div class="fixed-bottom-container grid">
+        <a class="column--light" href="{{ project.site }}">
+            <image 
+                src="{{ project.image | prepend: '/assets/' | prepend: site.baseurl }}"
+                alt="{{ project.title }} logo"
+            >
+        </a>
+        <div>
+            <a class="fw-semibold fs-large" href="{{ project.site }}">{{ project.title }}</a>
+            <div>{{ project.description | markdownify }}</div>
+            <a class="fixed-bottom" href="https://github.com/{{ project.github_project }}">View on Github</a>
+        </div>
+    </div>
+    <br/>
+    {% endfor %}
+</div>
+

@@ -7,15 +7,15 @@
 
 # Site settings
 title: Mercilessly Refactored Life
-email: brycekbargar@gmail.com
 description: "A collection of refactorings as I try to clean up the technical debt in my life, my code, and my music."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.brycekbargar.com" # the base hostname & protocol for your site
-github_username:  brycekbargar
 
 # Jekyll settings
 permalink: /:categories/:title/
 excerpt_separator: <!--more-->
+collections:
+  - projects
 
 # Build settings
 markdown: kramdown

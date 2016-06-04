@@ -1,3 +1,13 @@
 .d-block {
     display: block;
 }
+
+/* Make these better somehow? I'm awful with css... */
+.fixed-bottom-container {
+    position: relative;
+}
+
+.fixed-bottom-container .fixed-bottom {
+    position: absolute;
+    bottom: 0;
+}
