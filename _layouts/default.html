@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+    <head>
+        <title>
+            {% if page.title %}
+                {{ page.title | escape }}
+            {% else %}
+                {{ site.title | escape }}
+            {% endif %}
+        </title>
+        <meta name="description" content="
+            {% if page.excerpt %}
+                {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
+            {% else %}
+                {{ site.description }}
+            {% endif %}"
+        >
+        <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+    </head>
 
-  <body>
+    <body>
+        <header class="site-header">
+            <div class="wrapper">
+                <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+                <nav class="site-nav">
+                </nav>
+            </div>
+        </header>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
+        <div class="page-content">
+            <div class="wrapper">
+                {{ content }}
+            </div>
+        </div>
+    </body>
 
 </html>
