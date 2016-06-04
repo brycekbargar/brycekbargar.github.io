@@ -10,6 +10,8 @@ So I found this video of Ira Glass.
 <iframe src="https://player.vimeo.com/video/24715531" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/24715531">Ira Glass on Storytelling</a> from <a href="https://vimeo.com/thedak">David Shiyang Liu</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
+<!--more-->
+
 And for awhile I was doing what he recommended.  
 Just kind of putting myself out there and trying produce something, anything.  
 What he doesn't talk about is how hard it is to keep putting yourself out there.  

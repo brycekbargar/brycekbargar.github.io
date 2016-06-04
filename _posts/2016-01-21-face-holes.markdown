@@ -23,6 +23,8 @@ I was ready for my first stretch.
 So was 2g, 1g, 0g, 00g-, 00g+, 7/16", 12mm and now 1/2".  
 I have 1 more stretch until I'm at my goal, but I'm not in a huge hurry.  
 
+<!--more-->
+
 Over the past year and a half my as the pieces of glass in my ears have grown so has my relation with them.  
 What I originally started because I thought "they looked cool" have taken on a life of their own.   
 (they still look cool...)   

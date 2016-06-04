@@ -14,6 +14,8 @@ Unfortunately right now I'm on V2.3.1, so the solution may be different on newer
 **TLDR**;  
 I had multiple levels of Inheritance and StructureMap couldn't resolve them dynamically using Default Conventions.
 
+<!--more-->
+
 ### The setup ###
 
 ```csharp

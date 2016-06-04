@@ -24,6 +24,8 @@ and despite being an hour behind the main business I was suddenly free to come a
 
 So I shut off all my alarms.
 
+<!--more-->
+
 I'm not sure if it's 12 years of conditioning,  
 or the early summer sun,  
 or a hungry mewling of my 17lb Maine Coone  

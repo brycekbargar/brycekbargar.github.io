@@ -10,6 +10,8 @@ so in the mean time I'm writing pretty awful "filler" because I promised myself 
 
 NYC is awful...
 
+<!--more-->
+
 Maybe it's just my southern middle-class suburban upbringing, but I like having space.  
 When I first moved to Chicago the hardest thing to adjust to was the cramped living situations I found myself in.
 
