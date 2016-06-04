@@ -1,13 +1,27 @@
+/* Hacking a "div" into an h element */
 .d-block {
     display: block;
 }
 
-/* Make these better somehow? I'm awful with css... */
+/* Push the "View on Github" like to the bottom of the project */
 .fixed-bottom-container {
     position: relative;
 }
-
 .fixed-bottom-container .fixed-bottom {
     position: absolute;
     bottom: 0;
+}
+
+/* This is hideous */
+a {
+    text-decoration: none;
+}
+
+/* Get the page content to cozy up to the Header */
+.no-padding-top {
+    padding-top: 0px;
+    margin-top: -50px;
+}
+.negative-margin-top {
+    margin-top: -50px;
 }

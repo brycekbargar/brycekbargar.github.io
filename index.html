@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="wrapper-large ta-center">
+<div class="wrapper-large ta-center no-padding-top negative-margin-top">
     {% for post in site.posts limit:5 %}
         <div>
             <h3>
@@ -16,5 +16,5 @@ layout: default
         </div>
     {% endfor %}
     <br/>
-    <a title="All Blog Posts" href="{{ '/blog' | prepend: site.baseurl }}">ls -lA ~/Posts</a>
+    <a title="All Blog Posts" href="{{ '/blog' | prepend: site.baseurl }}">%> ls -lA ~/Posts</a>
 </div>
