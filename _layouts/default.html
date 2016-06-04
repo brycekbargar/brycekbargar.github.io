@@ -16,22 +16,25 @@
                 {{ site.description }}
             {% endif %}"
         >
+        <link rel="stylesheet" href="{{ '/css/cutestrap.min.css' | prepend: site.baseurl }}">
         <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ '/css/syntax-highlighting.css' | prepend: site.baseurl }}">
     </head>
 
     <body>
-        <header class="site-header">
-            <div class="wrapper">
-                <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-                <nav class="site-nav">
-                </nav>
-            </div>
+        <header class="ta-center">
+            <h1 class="fw-bold">
+                <a title="Home" href="{{ '/' : prepend: site.baseurl }}">{{ site.title }}</a>
+            </h1>
+            <nav class="grid grid--medium">
+                <a title="Latest 5 Blog Posts" href="{{ '/' | prepend: site.baseurl }}">head -n 5 -v</a>
+                <a title="About" href="{{ '/about/' | prepend: site.baseurl }}">whoami</a>
+                <a title="Projects" href="{{ '/projects/' | prepend: site.baseurl }}">ls -lA ~/Projects/</a>
+            </nav>
         </header>
 
-        <div class="page-content">
-            <div class="wrapper">
-                {{ content }}
-            </div>
+        <div class="wrapper-large">
+            {{ content }}
         </div>
     </body>
 
