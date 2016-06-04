@@ -4,7 +4,8 @@ layout: default
 
 <div class="wrapper-large">
     <h3 class="ta-center">Projects</h3>
-    {% for project in site.projects | sort:"order" %}
+    {% assign projects = site.projects | sort:'order'  %}
+    {% for project in projects %}
     <div class="fixed-bottom-container grid">
         <a class="column--light" href="{{ project.site }}">
             <image 
@@ -18,6 +19,8 @@ layout: default
             <a class="fixed-bottom" href="https://github.com/{{ project.github_project }}">View on Github</a>
         </div>
     </div>
+    <br/>
+    <hr/>
     <br/>
     {% endfor %}
 </div>
