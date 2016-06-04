@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<div class="RootPostList wrapper-large ta-center">
+<div class="wrapper-large ta-center">
     {% for post in site.posts limit:5 %}
         <div>
             <h3>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                <span class="fs-small fw-light RootPostList--date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <span class="fs-small fw-light d-block">{{ post.date | date: "%b %-d, %Y" }}</span>
             </h3>
             <div class="ta-left">
                 {{ post.excerpt }}

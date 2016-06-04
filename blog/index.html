@@ -7,7 +7,7 @@ layout: default
         <div>
             <h3>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                <span class="fs-small fw-light">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <span class="fs-small fw-light"> ~ {{ post.date | date: "%b %-d, %Y" }}</span>
             </h3>
         </div>
     {% endfor %}
