@@ -1,6 +1,6 @@
 ---
 order: 100
-image: "github.svg"
+image: "brycekbargar.github.io.png"
 site: "https://brycekbargar.com"
 github_project: "brycekbargar/brycekbargar.github.io"
 description: | 
