@@ -17,4 +17,17 @@ layout: default
     <div itemprop="articleBody">
         {{ content }}
     </div>
+
+    <nav class="wrapper-small">
+        {% if page.previous.url %}
+            <a title="Previous" class="prev" href="{{page.previous.url}}">
+                <~&nbsp;{{page.previous.title}}&nbsp;&nbsp;|&nbsp;
+            </a>
+        {% endif %}
+        {% if page.next.url %}
+            <a title="Next" class="next" href="{{page.next.url}}">
+                &nbsp;|&nbsp;&nbsp;{{page.next.title}}&nbsp;~>
+            </a>
+        {% endif %}
+    </nav>
 </article>
