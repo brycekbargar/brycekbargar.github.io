@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="wrapper-large">
+<div class="wrapper-large no-padding-top negative-margin-top">
     <h3 class="ta-center">Projects</h3>
     {% assign projects = site.projects | sort:'order'  %}
     {% for project in projects %}
@@ -20,7 +20,6 @@ layout: default
         </div>
     </div>
     <br/>
-    <hr/>
     <br/>
     {% endfor %}
 </div>

@@ -20,8 +20,14 @@ a {
 /* Get the page content to cozy up to the Header */
 .no-padding-top {
     padding-top: 0px;
-    margin-top: -50px;
 }
 .negative-margin-top {
     margin-top: -50px;
+}
+
+/* Make these look kind of like cutestrap code */
+.code {
+    color: #e528b0;
+    font-family: Consolas,Monaco,"Courier New",monospace;
+    line-height: 1;
 }

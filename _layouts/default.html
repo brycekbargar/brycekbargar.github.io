@@ -28,15 +28,29 @@
                 <a title="Home" href="{{ '/' : prepend: site.baseurl }}">{{ site.title }}</a>
             </h1>
             <nav class="grid grid--medium">
-                <a title="Latest 5 Blog Posts" href="{{ '/' | prepend: site.baseurl }}">%> head -n 5 -v</a>
-                <a title="About" href="{{ '/about/' | prepend: site.baseurl }}">%> whoami</a>
-                <a title="Projects" href="{{ '/projects/' | prepend: site.baseurl }}">%> ls -lA ~/Projects/</a>
+                <a title="Latest 5 Blog Posts" href="{{ '/' | prepend: site.baseurl }}">
+                    <span class="code">%> head -n 5 -v</span>
+                </a>
+                <a title="About" href="{{ '/about/' | prepend: site.baseurl }}">
+                    <span class="code">%> whoami</span>
+                </a>
+                <a title="Projects" href="{{ '/projects/' | prepend: site.baseurl }}">
+                    <span class="code">%> ls -lA ~/Projects/</span>
+                </a>
             </nav>
         </header>
 
         <hr/>
 
         {{ content }}
+
+        <hr/>
+
+        <nav class="ta-center grid grid--medium no-padding-top">
+            <a title="All Blog Posts" href="{{ '/blog/' | prepend: site.baseurl }}">
+                <span class="code">%> ls -1 ~/Posts/</span>
+            </a>
+        </nav>
     </body>
 
 </html>
