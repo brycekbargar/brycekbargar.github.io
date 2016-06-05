@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Clean Slate
+date: 2016-06-05 12:18:10.000000000 -05:00
 category: blog
 ---
 
@@ -12,6 +13,8 @@ That's kind of what I ended up with.
 So.  
 Rather than just continue with what was obviously not working,  
 I made a couple of changes to how I approach this site.
+
+<!--more-->
 
 You can see the
 
@@ -58,6 +61,6 @@ Honestly, both of those are/were true.
 But that doesn't mean the posts are worth anything...
 
 [0]: https://xkcd.com/621/
-[1]: {{ '/blog/???/' | prepend: site.baseurl }}
-[2]: {{ '/blog/???/' | prepend: site.baseurl }}
+[1]: {{ '/blog/to-jekyll-and-beyond/' | prepend: site.baseurl }}
+[2]: {{ '/blog/feeling-validated-as-a-service/' | prepend: site.baseurl }}
 [3]: http://vim-adventures.com/
