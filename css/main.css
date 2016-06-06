@@ -1,8 +1,3 @@
-/* Hacking a "div" into an h element */
-.d-block {
-    display: block;
-}
-
 /* Push the "View on Github" like to the bottom of the project */
 .fixed-bottom-container {
     position: relative;
@@ -15,14 +10,6 @@
 /* This is hideous */
 a {
     text-decoration: none;
-}
-
-/* Get the page content to cozy up to the Header */
-.no-padding-top {
-    padding-top: 0px;
-}
-.negative-margin-top {
-    margin-top: -50px;
 }
 
 /* Make these look kind of like cutestrap code */

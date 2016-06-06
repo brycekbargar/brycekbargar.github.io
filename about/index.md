@@ -3,7 +3,7 @@ layout: default
 permalink: /about/
 ---
 
-<div class="wrapper-small no-padding-top negative-margin-top" markdown="1">
+<div class="wrapper-small" markdown="1">
 
 <h3 class="ta-center">About</h3>
 

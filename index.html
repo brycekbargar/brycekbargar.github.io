@@ -2,13 +2,12 @@
 layout: default
 ---
 
-<div class="wrapper-large ta-center no-padding-top negative-margin-top">
+<div class="wrapper-large ta-center">
     {% for post in site.posts limit:5 %}
         <div>
-            <h3>
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                <span class="fs-small fw-light d-block">{{ post.date | date: "%b %-d, %Y" }}</span>
-            </h3>
+            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            <div class="fs-small fw-light">{{ post.date | date: "%b %-d, %Y" }}</div>
+            <br/>
             <div class="ta-left">
                 {{ post.excerpt }}
                 <a href="{{ post.url | prepend: site.baseurl }}">keep reading...</a>
