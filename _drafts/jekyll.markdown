@@ -47,28 +47,26 @@ I think it has more to do with my exposure to programming with cli tools.
 Once you `npm run watch` anything less than instant feedback feels like it's 2003 all over again.  
 (a side note, being a .NET Witch feels more like a "sit around and wait for the build/tests" Witch now)
 
-Maybe it wouldn't be such a big deal if I understood SquareSpace and could trust the output?  
-Though I'm not even sure if that's possible since
+### Other Considerations ###
+
+Maybe I could get over the above issues if SquareSpace was free.  
+But it's actually like $10 a month (with domain registration).  
+$10 a month isn't really anything alone, but it's easily the highest monthly cost that I have.  
+Do I enjoy or need SquareSpace more than Crunchyroll, Prime or Streaming Music? Definitely not. 
+
+I don't think I'd have an issue paying for it if it just worked.  
+One of the things I struggled with most is the content width.  
+
+As you can tell, I guess from years of programming, I really hate line wrap...  
+With the SquareSpace template I was previously using, the line length was a very real constraint.  
+:wa
 
 
-### Squarespace is a Massive Black Box ###
+
+
 
 [0]: http://c2.com/cgi/wiki?DoTheSimplestThingThatCouldPossiblyWork
 [1]: https://github.com/akahuku/wasavi
-
-
-Black boxi-ness
-
-- Configuration over convention is wrong
-- Leaky abstractions and too many abstractions
-- Looks "too" professional
-
-Other Considerations
-
-- $$$
-- SSL
-- Not actually learning anything (have time now)
-
 
 Jekyll
 
