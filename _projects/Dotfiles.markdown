@@ -1,6 +1,6 @@
 ---
 order: 200
-image: "github.svg"
+image: "dotfiles.png"
 site: "https://github.com/brycekbargar/dotfiles"
 github_project: "brycekbargar/dotfiles"
 description: |
