@@ -9,13 +9,18 @@
 title: Mercilessly Refactored Life
 description: "A collection of refactorings as I try to clean up the technical debt in my life, my code, and my music."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.brycekbargar.com" # the base hostname & protocol for your site
+url: "https://brycekbargar.com" # the base hostname & protocol for your site
+author: 
+  name: Bryce
+  email: brycekbargar@gmail.com
 
 # Jekyll settings
 permalink: /:categories/:title/
 excerpt_separator: <!--more-->
 collections:
   - projects
+gems:
+  - jekyll-feed
 
 # Build settings
 markdown: kramdown
