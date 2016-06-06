@@ -13,8 +13,12 @@ a {
 }
 
 /* Make these look kind of like cutestrap code */
-.code {
+span.code {
     color: #e528b0;
     font-family: Consolas,Monaco,"Courier New",monospace;
     line-height: 1;
+}
+
+img.no-table {
+    display: inline
 }
