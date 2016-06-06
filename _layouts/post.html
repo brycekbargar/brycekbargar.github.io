@@ -17,16 +17,12 @@ layout: default
         {{ content }}
     </div>
 
-    <nav class="wrapper-large ta-center">
+    <nav class="grid grid--medium">
         {% if page.previous.url %}
-            <a title="Previous" class="prev" href="{{page.previous.url}}">
-                <~&nbsp;{{page.previous.title}}&nbsp;&nbsp;|&nbsp;
-            </a>
+            <a title="Previous" class="ta-left" href="{{page.previous.url}}"><~&nbsp;{{page.previous.title}}</a>
         {% endif %}
         {% if page.next.url %}
-            <a title="Next" class="next" href="{{page.next.url}}">
-                &nbsp;|&nbsp;&nbsp;{{page.next.title}}&nbsp;~>
-            </a>
+            <a title="Next" class="ta-right" href="{{page.next.url}}">{{page.next.title}}&nbsp;~></a>
         {% endif %}
     </nav>
 </article>
