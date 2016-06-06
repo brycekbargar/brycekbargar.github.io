@@ -8,7 +8,9 @@ permalink: /about/
 <h3 class="ta-center">About</h3>
 
 ![A rare breakfast where I have chosen Nutella Crepes over Banana Pancakes][0]
-brycekbargar@gmail.com
+<span class="fw-light fs-small" mardown="0">
+*brycekbargar@gmail.com*
+</span>
 
 
 So there is a thing that exists called [Extreme Programming][1].  
