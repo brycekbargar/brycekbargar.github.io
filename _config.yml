@@ -19,8 +19,6 @@ permalink: /:categories/:title/
 excerpt_separator: <!--more-->
 collections:
   - projects
-gems:
-  - jekyll-feed
 
 # Build settings
 markdown: kramdown
