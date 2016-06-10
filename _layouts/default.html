@@ -53,12 +53,11 @@
 
         <nav class="grid grid--medium">
             <span class="ta-center">
-                <a title="All Blog Posts" href="{{ '/blog/' | prepend: site.baseurl }}">
-                    <span class="code">%> ls -1 ~/Posts/</span>
-                </a>
-                &nbsp;&nbsp;
                 <a title="Atom RSS" href="{{ '/feed.xml' | prepend: site.baseurl }}">
-                    (<img class="no-table" alt="Atom RSS" src="{{ '/assets/atom.png' | prepend: site.baseurl }}">)
+                    <img class="no-table" alt="Atom RSS" src="{{ '/assets/atom.png' | prepend: site.baseurl }}">
+                </a>
+                <a title="All Blog Posts" href="{{ '/blog/' | prepend: site.baseurl }}">
+                    <span class="code">> ls -1 ~/Posts/</span>
                 </a>
             </span>
         </nav>
