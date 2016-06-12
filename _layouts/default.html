@@ -20,15 +20,7 @@
         <link rel="stylesheet" href="{{ '/css/cutestrap.min.css' | prepend: site.baseurl }}">
         <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
         <link rel="stylesheet" href="{{ '/css/syntax-highlighting.css' | prepend: site.baseurl }}">
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-78770987-1', 'auto');
-            ga('send', 'pageview');
-        </script>
+        <script src="{{ '/js/mixpanel.js' | prepend: site.baseurl }}"></script>
     </head>
 
     <body>
@@ -37,7 +29,7 @@
                 <a title="Home" href="{{ '/' : prepend: site.baseurl }}">{{ site.title }}</a>
             </h1>
             <nav class="grid grid--medium">
-                <a title="Latest 5 Blog Posts" href="{{ '/' | prepend: site.baseurl }}">
+                <a id="Top5" title="Latest 5 Blog Posts" href="{{ '/' | prepend: site.baseurl }}">
                     <span class="code">%> head -n 5 -v</span>
                 </a>
                 <a title="About" href="{{ '/about/' | prepend: site.baseurl }}">
@@ -53,14 +45,22 @@
 
         <nav class="grid grid--medium">
             <span class="ta-center">
-                <a title="Atom RSS" href="{{ '/feed.xml' | prepend: site.baseurl }}">
+                <a id="RSS" title="Atom RSS" href="{{ '/feed.xml' | prepend: site.baseurl }}">
                     <img class="no-table" alt="Atom RSS" src="{{ '/assets/atom.png' | prepend: site.baseurl }}">
                 </a>
-                <a title="All Blog Posts" href="{{ '/blog/' | prepend: site.baseurl }}">
+                <a id="All" title="All Blog Posts" href="{{ '/blog/' | prepend: site.baseurl }}">
                     <span class="code">> ls -1 ~/Posts/</span>
                 </a>
             </span>
         </nav>
+
+        {% if page.script %}
+            <script src="{{ page.script | prepend: '/js/' | prepend: site.baseurl }}"></script>
+        {% endif %}
+        {% if layout.script %}
+            <script src="{{ layout.script | prepend: '/js/' | prepend: site.baseurl }}"></script>
+        {% endif %}
+        <script src="{{ '/js/default.js' | prepend: site.baseurl }}"></script>
     </body>
 
 </html>

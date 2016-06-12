@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /about/
+script: 'about.js'
 ---
 
 <div class="wrapper-small" markdown="1">
@@ -8,9 +9,9 @@ permalink: /about/
 <h3 class="ta-center">About</h3>
 
 ![A rare breakfast where I have chosen Nutella Crepes over Banana Pancakes][0]
-<span class="fw-light fs-small" mardown="0">
+<a id="Email" class="fw-light fs-small" mardown="0" href="mailto:brycekbargar@gmail.com">
 *brycekbargar@gmail.com*
-</span>
+</a>
 
 
 So there is a thing that exists called [Extreme Programming][1].  

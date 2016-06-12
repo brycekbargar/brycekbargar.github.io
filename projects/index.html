@@ -1,5 +1,6 @@
 ---
 layout: default
+script: 'projects.js'
 ---
 
 <div class="wrapper-large">
@@ -7,16 +8,16 @@ layout: default
     {% assign projects = site.projects | sort:'order'  %}
     {% for project in projects %}
     <div class="fixed-bottom-container grid">
-        <a class="column--light" href="{{ project.site }}">
+        <a class="ProjectSite--image column--light" href="{{ project.site }}">
             <image 
                 src="{{ project.image | prepend: '/assets/' | prepend: site.baseurl }}"
                 alt="{{ project.title }} logo"
             >
         </a>
         <div>
-            <a class="fw-semibold fs-large" href="{{ project.site }}">{{ project.title }}</a>
+            <a class="ProjectSite fw-semibold fs-large" href="{{ project.site }}">{{ project.title }}</a>
             <div>{{ project.description | markdownify }}</div>
-            <a class="fixed-bottom" href="https://github.com/{{ project.github_project }}">View on Github</a>
+            <a class="GithubSite fixed-bottom" href="https://github.com/{{ project.github_project }}">View on Github</a>
         </div>
     </div>
     <br/>
