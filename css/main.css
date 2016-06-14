@@ -20,5 +20,9 @@ span.code {
 }
 
 img.no-table {
-    display: inline
+    display: inline;
+}
+
+img {
+    max-width: 60%;
 }
