@@ -1,7 +1,6 @@
 ---
 layout: post
 title: StructureMap and Deep Inheritance at Runtime
-date: 2016-05-31 16:21:44.000000000 -05:00
 category: blog
 ---
 

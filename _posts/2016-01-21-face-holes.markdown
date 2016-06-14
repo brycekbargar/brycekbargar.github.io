@@ -1,7 +1,6 @@
 ---
 layout: post
 title: My Piercings
-date: 2016-01-21 02:40:51.000000000 -06:00
 category: blog
 ---
 

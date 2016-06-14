@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Difference of 30 Minutes
-date: 2016-05-31 14:25:10.000000000 -05:00
 category: blog
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: My Coffee Setup as of September 2015
-date: 2015-09-23 03:06:18.000000000 -05:00
 category: blog
 ---
 

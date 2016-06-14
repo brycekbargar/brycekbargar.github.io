@@ -1,7 +1,6 @@
 ---
 layout: post
 title: NYC
-date: 2015-10-12 02:53:16.000000000 -05:00
 category: blog
 ---
 

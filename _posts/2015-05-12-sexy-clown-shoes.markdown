@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How to make an Enterprisey API sexy
-date: 2015-05-12 03:25:24.000000000 -05:00
 category: blog
 ---
 

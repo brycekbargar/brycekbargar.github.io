@@ -1,7 +1,6 @@
 ---
 layout: post
 title: A day in the life
-date: 2015-04-30 02:43:54.000000000 -05:00
 category: blog
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Time-boxed Living
-date: 2015-09-19 00:54:26.000000000 -05:00
 category: blog
 ---
 

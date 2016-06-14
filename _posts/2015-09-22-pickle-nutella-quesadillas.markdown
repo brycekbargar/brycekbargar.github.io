@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Eating Soylent as a Transperson
-date: 2015-09-22 01:29:10.000000000 -05:00
 category: blog
 ---
 

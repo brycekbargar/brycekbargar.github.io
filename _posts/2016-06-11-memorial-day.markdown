@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How I Stopped Worrying (and learned to love being alone)
-date: 2016-06-11 21:37:10.000000000 -05:00
 category: blog
 ---
 

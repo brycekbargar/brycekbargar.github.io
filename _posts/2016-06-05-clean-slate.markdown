@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Simplest Thing (that could possibly work)
-date: 2016-06-05 21:32:10.000000000 -05:00
 category: blog
 ---
 

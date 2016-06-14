@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Anonymity
-date: 2015-09-27 23:11:29.000000000 -05:00
 category: blog
 ---
 

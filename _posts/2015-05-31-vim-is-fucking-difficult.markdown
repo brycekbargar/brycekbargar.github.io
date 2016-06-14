@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Personal Technical Debt
-date: 2015-05-31 21:08:49.000000000 -05:00
 category: blog
 ---
 
