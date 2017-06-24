@@ -1,7 +1,4 @@
-const metalsmith = require('metalsmith')(__dirname);
-const markdown = require('metalsmith-markdown')();
-
-metalsmith
+require('metalsmith')(__dirname)
   .metadata({
     site: {
       name: 'brycekbargar.com',
@@ -10,5 +7,9 @@ metalsmith
   })
   .source('./src')
   .destination('./public')
-  .use(markdown)
+  .use(require('metalsmith-markdown')())
+  .use(require('metalsmith-layouts')({
+    engine: 'handlebars',
+    default: 'default.hbs',
+  }))
   .build(err => { if (err) throw err; });
