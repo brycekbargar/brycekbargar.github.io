@@ -1,0 +1,20 @@
+{
+  "name": "brycekbargar.com",
+  "version": "0.0.1",
+  "description": "bryce's site",
+  "private": true,
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brycekbargar/brycekbargar.github.io.git"
+  },
+  "keywords": [
+    "metalsmith",
+    "blog",
+    "static-site"
+  ],
+  "author": "bryce",
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "homepage": "brycekbargar.com"
+}
