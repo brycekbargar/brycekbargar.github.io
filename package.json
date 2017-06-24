@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "bryce's site",
   "private": true,
-  "scripts": {
-  },
+  "main": "build.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brycekbargar/brycekbargar.github.io.git"
@@ -16,5 +15,9 @@
   ],
   "author": "bryce",
   "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  "homepage": "brycekbargar.com"
+  "homepage": "brycekbargar.com",
+  "dependencies": {},
+  "devDependencies": {
+    "metalsmith": "^2.3.0"
+  }
 }
