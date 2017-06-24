@@ -1,6 +1,7 @@
-const metalsmith = require('metalsmith');
+const metalsmith = require('metalsmith')(__dirname);
+const markdown = require('metalsmith-markdown')();
 
-metalsmith(__dirname)
+metalsmith
   .metadata({
     site: {
       name: 'brycekbargar.com',
@@ -9,4 +10,5 @@ metalsmith(__dirname)
   })
   .source('./src')
   .destination('./public')
+  .use(markdown)
   .build(err => { if (err) throw err; });
