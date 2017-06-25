@@ -7,9 +7,27 @@ require('metalsmith')(__dirname)
   })
   .source('./src')
   .destination('./public')
+  .use(require('metalsmith-collections')({
+    all: {
+      pattern: ['**/*.md', '!*.md'],
+      reverse: true,
+      limit: 5
+    },
+    reviews: {
+      pattern: 'reviews/*.md',
+      reverse: true
+    },
+    life: {
+      pattern: 'life/*.md',
+      reverse: true
+    },
+    tech: {
+      pattern: 'tech/*.md',
+      reverse: true
+    }
+  }))
   .use(require('metalsmith-markdown')())
   .use(require('metalsmith-layouts')({
     engine: 'handlebars',
-    default: 'default.hbs',
   }))
   .build(err => { if (err) throw err; });
