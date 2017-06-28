@@ -26,6 +26,20 @@ require('metalsmith')(__dirname)
     }
   }))
   .use(require('metalsmith-markdown')())
+  .use(require('metalsmith-permalinks')({
+    pattern: ':title',
+    relative: false,
+    linksets: [{
+      match: { collection: 'reviews' },
+      pattern: 'reviews/:title',
+    }, {
+      match: { collection: 'life' },
+      pattern: 'life/:title',
+    }, {
+      match: { collection: 'tech' },
+      pattern: 'tech/:title',
+    }],
+  }))
   .use(require('metalsmith-layouts')({
     engine: 'handlebars',
     partials: {
