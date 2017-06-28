@@ -2,7 +2,6 @@ require('metalsmith')(__dirname)
   .metadata({
     site: {
       name: 'brycekbargar.com',
-      description: "bryce's site"
     }
   })
   .source('./src')
@@ -29,5 +28,10 @@ require('metalsmith')(__dirname)
   .use(require('metalsmith-markdown')())
   .use(require('metalsmith-layouts')({
     engine: 'handlebars',
+    partials: {
+      header: 'partials/header',
+      footer: 'partials/footer',
+      postSummary: 'partials/postSummary',
+    }
   }))
   .build(err => { if (err) throw err; });

@@ -1,18 +1,6 @@
-<!DOCTYPE>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>{{ site.name }}</title>
-	</head>
-	<body>
-		<div>{{{ contents }}}</div>
-
-		{{#each reviews }}
-		<div>
-			<a href="{{ path }}">{{ title }}</a>
-			<div>{{ date }}</div>
-			<div>{{ blurb }}</div>
-		</div>
-		{{/each }}
-	</body>
-</html>
+{{> header }}
+	{{{ contents }}}
+	{{#each reviews }}
+		{{> postSummary }}
+	{{/each }}
+{{> footer }}
