@@ -5,7 +5,7 @@ require('metalsmith')(__dirname)
     }
   })
   .source('./src')
-  .destination('./public')
+  .destination('./blog')
   .use(require('metalsmith-collections')({
     all: {
       pattern: ['**/*.md', '!*.md'],
