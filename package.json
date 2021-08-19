@@ -1,0 +1,23 @@
+{
+  "name": "brycekbargar.github.io",
+  "version": "1.0.0",
+  "description": "11ty is neat.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brycekbargar/brycekbargar.github.io.git"
+  },
+  "keywords": [],
+  "author": "bryce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brycekbargar/brycekbargar.github.io/issues"
+  },
+  "homepage": "brycekbargar.com",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
