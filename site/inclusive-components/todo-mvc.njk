@@ -1,0 +1,9 @@
+{% section "head_scripts" %} {% include "alpine.html" %} {% endsection %}
+
+<div x-data></div>
+
+<script>
+  document.addEventListener("alpine:init", () => {
+    console.log("hello, world!");
+  });
+</script>
