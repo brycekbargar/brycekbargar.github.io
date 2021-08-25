@@ -15,19 +15,27 @@
   <form @submit.prevent="addTodo">
     <label for="todo-title" class="sr-only">Title of your new to-do</label>
     <input
-      x-model="todoTitle"
-      :aria-invalid="!todoTitle"
       id="todo-title"
       type="text"
       placeholder="E.g. Pet dogs"
+      required
+      x-model="todoTitle"
+      :aria-invalid="!todoTitle"
     />
     <button type="submit" :disabled="!todoTitle">Add</button>
   </form>
+  <div
+    role="status"
+    aria-live="polite"
+    class="sr-only"
+    x-text="$store.announcement"
+  ></div>
 </section>
 
 {% section "body_scripts" %}
 <script>
   document.addEventListener("alpine:init", () => {
+    Alpine.store("announcement", "");
     Alpine.data("todomvc", () => ({
       todoList: [
         {
@@ -45,6 +53,7 @@
         this.todoList.push({
           title: this.todoTitle,
         });
+        Alpine.store("announcement", `"${this.todoTitle}" added`);
         this.todoTitle = "";
       },
     }));
