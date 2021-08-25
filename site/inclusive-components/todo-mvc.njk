@@ -7,8 +7,11 @@
 >
   <h1 id="todo-header">Inclusive To-do List</h1>
   <ul>
-    <template x-for="todo in todoList">
-      <li x-text="todo.title"></li>
+    <template x-for="(todo, i) in todoList">
+      <li>
+        <input type="checkbox" :id="`todo-${i}`" x-model="todo.done" />
+        <label :for="`todo-${i}`" x-text="todo.title"></label>
+      </li>
     </template>
   </ul>
   <div id="no-todo-message">Todos you add will showup here!</div>
@@ -40,6 +43,7 @@
       todoList: [
         {
           title: "Learn alpine.js",
+          done: true,
         },
         {
           title: "Go bouldering",
@@ -69,6 +73,9 @@
   }
   #inclusive-todo-list ul:empty + #no-todo-message {
     display: block;
+  }
+  #inclusive-todo-list :checked + label {
+    text-decoration: line-through;
   }
   #inclusive-todo-list .sr-only {
     position: absolute;
