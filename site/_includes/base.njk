@@ -8,10 +8,13 @@
       {{ subtitle }}{% endif %}
     </title>
 
-    {% rendersection "head_scripts" %}
+    {% rendersection "styles" %} {% rendersection "head_scripts" %}
   </head>
 
   <body>
-    {{ content | safe }}
+    <main>
+      {{ content | safe }}
+    </main>
+    {% rendersection "body_scripts" %}
   </body>
 </html>

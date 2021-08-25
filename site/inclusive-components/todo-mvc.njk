@@ -1,9 +1,74 @@
 {% section "head_scripts" %} {% include "alpine.html" %} {% endsection %}
 
-<div x-data></div>
+<section
+  x-data="todomvc"
+  aria-labelledby="todo-header"
+  id="inclusive-todo-list"
+>
+  <h1 id="todo-header">Inclusive To-do List</h1>
+  <ul>
+    <template x-for="todo in todoList">
+      <li x-text="todo.title"></li>
+    </template>
+  </ul>
+  <div id="no-todo-message">Todos you add will showup here!</div>
+  <form @submit.prevent="addTodo">
+    <label for="todo-title" class="sr-only">Title of your new to-do</label>
+    <input
+      x-model="todoTitle"
+      :aria-invalid="!todoTitle"
+      id="todo-title"
+      type="text"
+      placeholder="E.g. Pet dogs"
+    />
+    <button type="submit" :disabled="!todoTitle">Add</button>
+  </form>
+</section>
 
+{% section "body_scripts" %}
 <script>
   document.addEventListener("alpine:init", () => {
-    console.log("hello, world!");
+    Alpine.data("todomvc", () => ({
+      todoList: [
+        {
+          title: "Learn alpine.js",
+        },
+        {
+          title: "Go bouldering",
+        },
+        {
+          title: "Ride a bike",
+        },
+      ],
+      todoTitle: "",
+      addTodo() {
+        this.todoList.push({
+          title: this.todoTitle,
+        });
+        this.todoTitle = "";
+      },
+    }));
   });
 </script>
+{% endsection %}
+<!---->
+{% section "styles" %}
+<style type="text/css">
+  #inclusive-todo-list #no-todo-message,
+  #inclusive-todo-list #no-todo-message + ul:empty {
+    display: none;
+  }
+  #inclusive-todo-list ul:empty + #no-todo-message {
+    display: block;
+  }
+  #inclusive-todo-list .sr-only {
+    position: absolute;
+    clip: rect(1px, 1px, 1px 1px) !important;
+    position: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden !important;
+  }
+</style>
+{% endsection %}

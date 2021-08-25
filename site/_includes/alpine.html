@@ -1,1 +1,5 @@
+{% if site.environment === 'production' %}
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+{% else %}
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.js"></script>
+{% endif %}
