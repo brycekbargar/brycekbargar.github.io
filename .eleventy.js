@@ -11,9 +11,13 @@ module.exports = function (eleventyConfig) {
     return "";
   });
 
+  eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.addPassthroughCopy("site/static/*");
+
   return {
     dir: {
       input: "site",
     },
+    passthroughFileCopy: true,
   };
 };

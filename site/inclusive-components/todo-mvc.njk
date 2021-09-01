@@ -17,7 +17,7 @@
   <ul>
     <template x-for="todo in [...todoList]" :key="todo.id">
       <li>
-        <input type="checkbox" :id="`todo-${todo.id}`" x-model="todo.done" />
+        <input type="checkbox" :id="`todo-${todo.id}`" x-model="todo.checked" />
         <label :for="`todo-${todo.id}`" x-text="todo.title"></label>
         <button @click="removeTodo(todo)">
           <svg focusable="false">
@@ -43,57 +43,36 @@
   </form>
 </section>
 
+{% section "preloads" %}
+<link rel="modulepreload" href="/static/TodoList.js" />
+{% endsection %}
+<!---->
 {% section "scripts" %}
-<script>
-  class TodoList {
-    todoId = 1;
-    todos;
-    constructor(todos) {
-      this.todos = (todos || []).map((t) => {
-        t.id = t.id || this.todoId++;
-        return t;
-      });
-    }
-    add(title) {
-      this.todos.push({
-        id: this.todoId++,
-        title: title,
-      });
-    }
-    remove(id) {
-      this.todos = this.todos.filter((t) => t.id !== id);
-    }
-    [Symbol.iterator]() {
-      return this.todos[Symbol.iterator]();
-    }
-  }
+<script type="module">
+  import TodoList from "/static/TodoList.js";
+
+  const list = new TodoList();
+  list.add("Learn alpine.js", true);
+  list.add("Go bouldering");
+  list.add("Ride a bike");
+
+  window.todomvc = {
+    todoList: list,
+    todoTitle: "",
+    addTodo() {
+      this.todoList.add(this.todoTitle);
+      Alpine.store("live").announce(`"${this.todoTitle}" added`);
+      this.todoTitle = "";
+    },
+    removeTodo(todo) {
+      this.todoList.remove(todo.id);
+      Alpine.store("live").announce(`"${todo.title}" removed`);
+      this.$refs.title.focus();
+    },
+  };
 
   document.addEventListener("alpine:init", () => {
-    Alpine.data("todomvc", () => ({
-      todoList: new TodoList([
-        {
-          title: "Learn alpine.js",
-          done: true,
-        },
-        {
-          title: "Go bouldering",
-        },
-        {
-          title: "Ride a bike",
-        },
-      ]),
-      todoTitle: "",
-      addTodo() {
-        this.todoList.add(this.todoTitle);
-        Alpine.store("live").announce(`"${this.todoTitle}" added`);
-        this.todoTitle = "";
-      },
-      removeTodo(todo) {
-        this.todoList.remove(todo.id);
-        Alpine.store("live").announce(`"${todo.title}" removed`);
-        this.$refs.title.focus();
-      },
-    }));
+    Alpine.data("todomvc", () => window.todomvc);
   });
 </script>
 {% endsection %}

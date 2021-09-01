@@ -1,5 +1,6 @@
 _site
 site/static/*.js
+site/static/*.js.map
 site/static/*.css
 
 # Logs

@@ -21,15 +21,6 @@
     </style>
     {% rendersection "styles" %}
     <!---->
-    {% if site.environment === 'production' %}
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    {% else %}
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.js"></script>
-    {% endif %}
-    <!---->
     {% rendersection "preloads" %}
   </head>
 
@@ -61,5 +52,14 @@
       });
     </script>
     {% rendersection "scripts" %}
+    <!---->
+    {% if site.environment === 'production' %}
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    {% else %}
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.js"></script>
+    {% endif %}
   </body>
 </html>
