@@ -8,13 +8,24 @@
       {{ subtitle }}{% endif %}
     </title>
 
-    {% rendersection "styles" %} {% rendersection "head_scripts" %}
+    {% rendersection "styles" %}
+    <!---->
+    {% if site.environment === 'production' %}
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    {% else %}
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.js"></script>
+    {% endif %}
+    <!---->
+    {% rendersection "preloads" %}
   </head>
 
   <body>
     <main>
       {{ content | safe }}
     </main>
-    {% rendersection "body_scripts" %}
+    {% rendersection "scripts" %}
   </body>
 </html>
