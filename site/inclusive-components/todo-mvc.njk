@@ -41,18 +41,11 @@
     />
     <button type="submit" :disabled="!todoTitle">Add</button>
   </form>
-  <div
-    role="status"
-    aria-live="polite"
-    class="sr-only"
-    x-text="$store.announcement"
-  ></div>
 </section>
 
 {% section "scripts" %}
 <script>
   document.addEventListener("alpine:init", () => {
-    Alpine.store("announcement", "");
     Alpine.data("todomvc", () => ({
       todoList: [
         {
@@ -71,12 +64,12 @@
         this.todoList.push({
           title: this.todoTitle,
         });
-        Alpine.store("announcement", `"${this.todoTitle}" added`);
+        Alpine.store("live").announce(`"${this.todoTitle}" added`);
         this.todoTitle = "";
       },
       removeTodo(todo) {
         this.todoList = this.todoList.filter((t) => t !== todo);
-        Alpine.store("announcement", `"${todo.title}" removed`);
+        Alpine.store("live").announce(`"${todo.title}" removed`);
         this.$refs.title.focus();
       },
     }));
@@ -102,15 +95,6 @@
   #inclusive-todo-list svg {
     height: 1.25rem;
     width: 1.25rem;
-  }
-  #inclusive-todo-list .sr-only {
-    position: absolute;
-    clip: rect(1px, 1px, 1px 1px) !important;
-    position: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden !important;
   }
 </style>
 {% endsection %}

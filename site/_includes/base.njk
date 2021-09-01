@@ -8,6 +8,17 @@
       {{ subtitle }}{% endif %}
     </title>
 
+    <style type="text/css">
+      .sr-only {
+        position: absolute;
+        clip: rect(1px, 1px, 1px 1px) !important;
+        position: 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden !important;
+      }
+    </style>
     {% rendersection "styles" %}
     <!---->
     {% if site.environment === 'production' %}
@@ -26,6 +37,29 @@
     <main>
       {{ content | safe }}
     </main>
+    <div
+      role="status"
+      class="sr-only"
+      x-data
+      x-text="$store.live.message"
+      :aria-live="$store.live.level"
+    ></div>
+    <script>
+      document.addEventListener("alpine:init", () => {
+        Alpine.store("live", {
+          message: "",
+          level: "polite",
+          announce(message) {
+            this.message = message;
+            this.level = "polite";
+          },
+          assert(message) {
+            this.message = message;
+            this.level = "assertive";
+          },
+        });
+      });
+    </script>
     {% rendersection "scripts" %}
   </body>
 </html>
