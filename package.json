@@ -4,8 +4,9 @@
   "description": "11ty is neat.",
   "main": "index.js",
   "scripts": {
+    "dev:postcss": "postcss site/static/tailwind.pcss -o site/static/site.css --watch",
     "dev:esbuild": "esbuild src/domain/TodoList.js --format=esm --bundle --sourcemap --watch --outdir=site/static",
-		"dev:11ty": "eleventy --serve --watch",
+    "dev:11ty": "eleventy --serve --watch",
     "start": "run-p dev:*"
   },
   "repository": {
@@ -21,7 +22,14 @@
   "homepage": "brycekbargar.com",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@tailwindcss/forms": "^0.3.3",
+    "autoprefixer": "^10.3.3",
     "esbuild": "^0.12.24",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "postcss-nesting": "^8.0.1",
+    "tailwindcss": "^2.2.9"
   }
 }
